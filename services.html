@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | BR Civil LLC</title>
+  <meta name="description" content="Explore civil capabilities from BR Civil LLC, including Special Inspections, REI, Cost Estimation, Plumbing Engineering, and Construction Management in Queens and NYC.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* VERTICAL SCROLL TRACK FOR SERVICES SECTION */
+    .services-scroll-container {
+      max-height: 480px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 16px;
+      scroll-behavior: smooth;
+      border-top: 1px solid var(--grey-light, #18382B);
+      border-bottom: 1px solid var(--grey-light, #18382B);
+    }
+
+    .services-scroll-container::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .services-scroll-container::-webkit-scrollbar-track {
+      background: rgba(10, 27, 20, 0.05);
+      border-radius: 4px;
+    }
+
+    .services-scroll-container::-webkit-scrollbar-thumb {
+      background: var(--gold, #D4AF37);
+      border-radius: 4px;
+    }
+
+    .services-scroll-container .service-row:first-child {
+      border-top: none;
+    }
+
+    .services-scroll-container .service-row:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOP INFORMATION BAR ================= -->
+  <div class="top-bar">
+    <div class="wrap top-bar-inner">
+      <div class="top-bar-info">
+        <span>📍 Queens, NYC</span>
+        <span>✉️ <a href="mailto:1blackrockcivil@gmail.com" style="color:inherit;">1blackrockcivil@gmail.com</a></span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:2019932388">📞 Sourabh S Tiwari: (201) 993-2388</a>
+        <a href="tel:6464170397">📞 Raja Ramnathan: (646) 417-0397</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header on-dark" id="siteHeader">
+    <div class="wrap header-wrap">
+      
+      <!-- BRAND LOGO IMAGE & ELEGANT TYPOGRAPHY -->
+      <a href="index.html" class="logo" aria-label="BR Civil LLC Home" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="logo-img" style="height:48px; width:auto;">
+        <span class="brand-name-text" style="font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:1.35rem; color:#ffffff; letter-spacing:-0.02em; line-height:1; text-transform:uppercase;">
+          BR <span style="color:#D4AF37; font-weight:600; font-size:1.2rem; letter-spacing:0.04em;">Civil LLC</span>
+        </span>
+      </a>
+
+      <!-- MAIN NAVIGATION -->
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- HEADER CTA -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn solid header-btn">
+          Request Quote
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Navigation">
+          Menu
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= SERVICES HERO ================= -->
+  <section class="about-hero">
+    <div class="about-hero-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=85&w=2000&auto=format&fit=crop');"></div>
+    <div class="about-hero-overlay"></div>
+
+    <div class="wrap about-hero-inner">
+      <div class="eyebrow">Capabilities</div>
+      <h1>Comprehensive Civil &amp; <span>Special Inspection Services</span></h1>
+      <p class="hero-sub">From preliminary cost take-offs and Special Inspections to Resident Engineering and full site delivery across Queens and New York City.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn solid">Discuss Your Scope</a>
+        <a href="projects.html" class="btn on-dark">View Portfolio</a>
+      </div>
+    </div>
+    <div class="about-hero-meta"><span>02</span> What We Do</div>
+    <div class="scroll-cue">Scroll</div>
+  </section>
+
+  <!-- ================= SERVICES LIST (VERTICAL SCROLLING) ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Our Capabilities</div>
+          <h2>One team.<br>Five core disciplines.</h2>
+        </div>
+        <p>Every civil project is unique. Our engineering capabilities can be tailored to the size, complexity, timeline, and NYC compliance mandates of your site.</p>
+      </div>
+
+      <!-- VERTICAL SCROLL TRACK -->
+      <div class="services-scroll-container reveal">
+        <div class="service-row">
+          <div class="idx">01</div>
+          <h3>REI (Resident Engineering Inspection)</h3>
+          <p>Full-time on-site technical inspection, material verification, contractor coordination, and progress log auditing.</p>
+        </div>
+
+        <div class="service-row">
+          <div class="idx">02</div>
+          <h3>Cost Estimation</h3>
+          <p>Detailed quantity take-offs, trade cost breakdowns, pre-construction feasibility audits, and value engineering reviews.</p>
+        </div>
+
+        <div class="service-row">
+          <div class="idx">03</div>
+          <h3>Special Inspections</h3>
+          <p>NYC DOB-compliant inspections covering structural steel, concrete, masonry, excavation, and life-safety systems.</p>
+        </div>
+
+        <div class="service-row">
+          <div class="idx">04</div>
+          <h3>Plumbing Engineering</h3>
+          <p>Civil plumbing schematics, municipal water main hookups, backflow prevention, and installation code verification.</p>
+        </div>
+
+        <div class="service-row">
+          <div class="idx">05</div>
+          <h3>Construction Management</h3>
+          <p>End-to-end site supervision, subcontractor alignment, safety protocol enforcement, and timely handover execution.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section class="section section-dark">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Our Process</div>
+          <h2>From consultation to final DOB sign-off.</h2>
+        </div>
+        <p>A structured sequence keeps expectations, schedules, budgets, and jobsite safety clear at every project milestone.</p>
+      </div>
+
+      <div class="process-list reveal">
+        <div class="process-item">
+          <div class="idx">01</div>
+          <h3>Understand</h3>
+          <p>We review project drawings, site conditions, DOB filings, and schedule requirements with engineering leadership.</p>
+          <div class="process-image">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=85&w=1000&auto=format&fit=crop" alt="Project discovery" loading="lazy">
+          </div>
+          <span class="process-arrow">↗</span>
+        </div>
+
+        <div class="process-item">
+          <div class="idx">02</div>
+          <h3>Plan</h3>
+          <p>We establish inspection milestones, trade cost take-offs, safety procedures, and procurement schedules.</p>
+          <div class="process-image">
+            <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?q=85&w=1000&auto=format&fit=crop" alt="Blueprint planning" loading="lazy">
+          </div>
+          <span class="process-arrow">↗</span>
+        </div>
+
+        <div class="process-item">
+          <div class="idx">03</div>
+          <h3>Inspect &amp; Oversee</h3>
+          <p>Our resident engineers perform daily quality assurance, structural field audits, and compliance logging.</p>
+          <div class="process-image">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=85&w=1000&auto=format&fit=crop" alt="Onsite engineering oversight" loading="lazy">
+          </div>
+          <span class="process-arrow">↗</span>
+        </div>
+
+        <div class="process-item">
+          <div class="idx">04</div>
+          <h3>Execute</h3>
+          <p>Active site operations are managed under certified protocols to keep work safe and moving forward efficiently.</p>
+          <div class="process-image">
+            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=85&w=1000&auto=format&fit=crop" alt="Active construction site" loading="lazy">
+          </div>
+          <span class="process-arrow">↗</span>
+        </div>
+
+        <div class="process-item">
+          <div class="idx">05</div>
+          <h3>Deliver</h3>
+          <p>We complete final inspection reports, punch lists, and deliver organized closeout documentation for municipal approval.</p>
+          <div class="process-image">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=85&w=1000&auto=format&fit=crop" alt="Completed project" loading="lazy">
+          </div>
+          <span class="process-arrow">↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="cta-banner">
+    <div class="wrap cta-inner">
+      <div class="cta-text">
+        <h2>Have a project scope in mind?<br>Let's discuss what's required.</h2>
+      </div>
+      <a href="contact.html" class="btn on-dark">Start a Conversation →</a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo-wrap">
+            <a href="index.html">
+              <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <p style="opacity:0.65; font-size:0.9rem; max-width:280px; color:inherit;">
+            Licensed civil engineering, REI, Special Inspections, Estimation, Plumbing, and Construction services in Queens, NYC.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Contacts</h4>
+          <ul>
+            <li>Queens, NYC</li>
+            <li>Sourabh S Tiwari: <a href="tel:2019932388">(201) 993-2388</a></li>
+            <li>Raja Ramnathan: <a href="tel:6464170397">(646) 417-0397</a></li>
+            <li><a href="mailto:1blackrockcivil@gmail.com">1blackrockcivil@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>REI</li>
+            <li>Estimation</li>
+            <li>Special Inspections</li>
+            <li>Plumbing &amp; Construction</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 BR Civil LLC. All rights reserved.</span>
+        <span>Queens, NYC · Certified Civil Services</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

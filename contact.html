@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Representatives | BR Civil LLC</title>
+  <meta name="description" content="Contact Sourabh S Tiwari or Raja Ramnathan at BR Civil LLC for Special Inspections, REI, Estimation, Plumbing, and Construction services in Queens, NYC.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-grid-layout {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.4fr);
+      gap: 50px;
+      align-items: start;
+    }
+
+    .info-card-block {
+      background: var(--charcoal, #0E241B);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      padding: 28px;
+      border-radius: 6px;
+      color: var(--white, #ffffff);
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .info-card-block:hover {
+      border-color: var(--gold, #D4AF37);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp-direct {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #25D366;
+      color: #FFFFFF !important;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.25s ease, transform 0.25s ease;
+      margin-top: 6px;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+    }
+
+    .btn-whatsapp-direct:hover {
+      background-color: #1EBE5D;
+      transform: translateY(-2px);
+      color: #FFFFFF !important;
+    }
+
+    .contact-form-wrap input,
+    .contact-form-wrap select,
+    .contact-form-wrap textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid var(--grey-light, #18382b);
+      border-radius: 4px;
+      padding: 16px;
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .contact-form-wrap input:focus,
+    .contact-form-wrap select:focus,
+    .contact-form-wrap textarea:focus {
+      border-color: var(--gold, #D4AF37) !important;
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    }
+
+    @media (max-width: 880px) {
+      .contact-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOP INFORMATION BAR ================= -->
+  <div class="top-bar">
+    <div class="wrap top-bar-inner">
+      <div class="top-bar-info">
+        <span>📍 Queens, NYC</span>
+        <span>✉️ <a href="mailto:1blackrockcivil@gmail.com" style="color:inherit;">1blackrockcivil@gmail.com</a></span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:2019932388">📞 Sourabh S Tiwari: (201) 993-2388</a>
+        <a href="tel:6464170397">📞 Raja Ramnathan: (646) 417-0397</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SITE HEADER ================= -->
+  <header class="site-header on-dark" id="siteHeader">
+    <div class="wrap header-wrap">
+      
+      <!-- BRAND LOGO IMAGE & ELEGANT TYPOGRAPHY -->
+      <a href="index.html" class="logo" aria-label="BR Civil LLC Home" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="logo-img" style="height:48px; width:auto;">
+        <span class="brand-name-text" style="font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:1.35rem; color:#ffffff; letter-spacing:-0.02em; line-height:1; text-transform:uppercase;">
+          BR <span style="color:#D4AF37; font-weight:600; font-size:1.2rem; letter-spacing:0.04em;">Civil LLC</span>
+        </span>
+      </a>
+
+      <!-- MAIN NAVIGATION -->
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- HEADER CTA -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn solid header-btn">
+          Request Quote
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Navigation">
+          Menu
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="about-hero">
+    <div class="about-hero-image" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=85&w=2000&auto=format&fit=crop');"></div>
+    <div class="about-hero-overlay"></div>
+
+    <div class="wrap about-hero-inner">
+      <div class="eyebrow">Connect Direct</div>
+      <h1>Request a Civil <span>Consultation</span></h1>
+      <p class="hero-sub">Speak directly with company leadership regarding Special Inspections, REI, Cost Estimation, Plumbing, or Construction scope across NYC.</p>
+    </div>
+    <div class="about-hero-meta"><span>04</span> Get In Touch</div>
+    <div class="scroll-cue">Scroll</div>
+  </section>
+
+  <!-- ================= MAIN CONTACT SECTION ================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Get in Touch</div>
+          <h2>Direct Communication &amp;<br>Project Scoping.</h2>
+        </div>
+        <p>Whether you require DOB Special Inspections, resident engineering, cost estimation, plumbing, or direct site management, we are ready to assist.</p>
+      </div>
+
+      <div class="contact-grid-layout reveal">
+        
+        <!-- LEFT COLUMN: DIRECT OWNER CONTACT CARDS -->
+        <div style="display:flex; flex-direction:column; gap:24px;">
+          
+          <!-- LOCATION CARD -->
+          <div class="info-card-block">
+            <div class="eyebrow">Office Location</div>
+            <h4 style="color:var(--gold); font-size:1.1rem; margin-bottom:6px;">BR Civil LLC</h4>
+            <p style="color:rgba(255,255,255,0.8); margin:0;">Queens, NYC</p>
+          </div>
+
+          <!-- DIRECT WHATSAPP & PHONE REPRESENTATIVE CARDS -->
+          <div class="info-card-block">
+            <div class="eyebrow">Direct Owner Contacts</div>
+            
+            <!-- REPRESENTATIVE 1 -->
+            <div style="margin-bottom:24px; padding-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.12);">
+              <h4 style="color:var(--gold); font-size:1.05rem; margin-bottom:6px;">Sourabh S Tiwari</h4>
+              <p style="margin-bottom:10px;">
+                <a href="tel:2019932388" style="color:rgba(255,255,255,0.85);">📞 Phone: (201) 993-2388</a>
+              </p>
+              <a href="https://wa.me/12019932388?text=Hello%20Sourabh,%20I%20am%20reaching%20out%20via%20the%20BR%20Civil%20LLC%20website%20regarding%20a%20project." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-whatsapp-direct">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <path d="M16 2C8.268 2 2 8.268 2 16c0 2.82.83 5.44 2.26 7.64L2.05 30l6.58-2.15C10.77 29.19 13.3 30 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.45 0-4.75-.71-6.7-1.95l-.48-.3-3.9 1.28 1.29-3.79-.33-.52A11.43 11.43 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5S27.5 9.66 27.5 16 22.34 27.5 16 27.5zm6.29-8.62c-.34-.17-2.03-1.00-2.35-1.12-.31-.12-.54-.17-.77.17-.23.34-.89 1.12-1.09 1.35-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.54-.28-.67-.57-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.23 3.32 1.4 3.55c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.03-.83 2.32-1.63.29-.8.29-1.49.2-1.63-.08-.14-.31-.23-.65-.4z" fill="#FFFFFF"/>
+                </svg>
+                Chat with Sourabh on WhatsApp
+              </a>
+            </div>
+
+            <!-- REPRESENTATIVE 2 -->
+            <div>
+              <h4 style="color:var(--gold); font-size:1.05rem; margin-bottom:6px;">Raja Ramnathan</h4>
+              <p style="margin-bottom:10px;">
+                <a href="tel:6464170397" style="color:rgba(255,255,255,0.85);">📞 Phone: (646) 417-0397</a>
+              </p>
+              <a href="https://wa.me/16464170397?text=Hello%20Raja,%20I%20am%20reaching%20out%20via%20the%20BR%20Civil%20LLC%20website%20regarding%20a%20project." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-whatsapp-direct">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <path d="M16 2C8.268 2 2 8.268 2 16c0 2.82.83 5.44 2.26 7.64L2.05 30l6.58-2.15C10.77 29.19 13.3 30 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5c-2.45 0-4.75-.71-6.7-1.95l-.48-.3-3.9 1.28 1.29-3.79-.33-.52A11.43 11.43 0 014.5 16c0-6.34 5.16-11.5 11.5-11.5S27.5 9.66 27.5 16 22.34 27.5 16 27.5zm6.29-8.62c-.34-.17-2.03-1.00-2.35-1.12-.31-.12-.54-.17-.77.17-.23.34-.89 1.12-1.09 1.35-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.69-2.01-1.89-2.35-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.54-.28-.67-.57-.58-.77-.59-.2-.01-.43-.01-.66-.01-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.23 3.32 1.4 3.55c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.03-.83 2.32-1.63.29-.8.29-1.49.2-1.63-.08-.14-.31-.23-.65-.4z" fill="#FFFFFF"/>
+                </svg>
+                Chat with Raja on WhatsApp
+              </a>
+            </div>
+
+          </div>
+
+          <!-- EMAIL CARD -->
+          <div class="info-card-block">
+            <div class="eyebrow">Email Inquiries</div>
+            <p style="margin:0;">
+              <a href="mailto:1blackrockcivil@gmail.com" style="color:var(--gold); font-weight:600;">1blackrockcivil@gmail.com</a>
+            </p>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: CONSULTATION FORM -->
+        <div class="contact-form-wrap">
+          <form id="contactForm" action="https://formspree.io/f/xrpzyykq" method="POST">
+            <div style="margin-bottom:20px;">
+              <label for="name" style="display:block; font-weight:600; margin-bottom:8px;">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div style="margin-bottom:20px;">
+              <label for="email" style="display:block; font-weight:600; margin-bottom:8px;">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div style="margin-bottom:20px;">
+              <label for="phone" style="display:block; font-weight:600; margin-bottom:8px;">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+
+            <div style="margin-bottom:20px;">
+              <label for="serviceType" style="display:block; font-weight:600; margin-bottom:8px;">Required Service Scope *</label>
+              <select id="serviceType" name="serviceType" required style="background:white;">
+                <option value="">Select Service Scope</option>
+                <option value="rei">01 — REI (Resident Engineering Inspection)</option>
+                <option value="estimation">02 — Cost Estimation</option>
+                <option value="special-inspections">03 — Special Inspections</option>
+                <option value="plumbing">04 — Plumbing Engineering</option>
+                <option value="construction">05 — Construction Management</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:24px;">
+              <label for="message" style="display:block; font-weight:600; margin-bottom:8px;">Project Scope &amp; Details *</label>
+              <textarea id="message" name="message" rows="6" placeholder="Provide details regarding site location, required inspection or estimation scope, and project timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn solid" style="width:100%; justify-content:center; cursor:pointer;">Submit Consultation Inquiry →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo-wrap">
+            <a href="index.html">
+              <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <p style="opacity:0.65; font-size:0.9rem; max-width:280px; color:inherit;">
+            Licensed civil engineering, REI, Special Inspections, Estimation, Plumbing, and Construction services in Queens, NYC.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Contacts</h4>
+          <ul>
+            <li>Queens, NYC</li>
+            <li>Sourabh S Tiwari: <a href="tel:2019932388">(201) 993-2388</a></li>
+            <li>Raja Ramnathan: <a href="tel:6464170397">(646) 417-0397</a></li>
+            <li><a href="mailto:1blackrockcivil@gmail.com">1blackrockcivil@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>REI</li>
+            <li>Estimation</li>
+            <li>Special Inspections</li>
+            <li>Plumbing &amp; Construction</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 BR Civil LLC. All rights reserved.</span>
+        <span>Queens, NYC · Certified Civil Services</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
