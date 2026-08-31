@@ -1,12 +1,12 @@
 [[redirects]]
-  from = "http://blackrockcivil.com/*"
-  to = "https://www.blackrockcivil.com/:splat"
+  from = "http://blackrockcivil.net/*"
+  to = "https://www.blackrockcivil.net/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://blackrockcivil.com/*"
-  to = "https://www.blackrockcivil.com/:splat"
+  from = "https://blackrockcivil.net/*"
+  to = "https://www.blackrockcivil.net/:splat"
   status = 301
   force = true
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.blackrockcivil.com/sitemap.xml
+Sitemap: https://www.blackrockcivil.net/sitemap.xml
