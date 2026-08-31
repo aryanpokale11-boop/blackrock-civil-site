@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | BR Civil LLC</title>
-  <meta name="description" content="Explore selected civil engineering, Special Inspections, REI, and commercial construction projects delivered by BR Civil LLC in Queens and NYC.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>NYC Civil Engineering &amp; DOB Inspection Projects | BR Civil LLC</title>
+    <meta name="description" content="View selected civil engineering, NYC DOB Special Inspections, and Resident Engineering (REI) projects delivered across Queens, Manhattan, and Brooklyn.">
+    <link rel="canonical" href="https://www.blackrockcivil.com/projects.html">
+  
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blackrockcivil.com/projects.html">
+    <meta property="og:title" content="NYC Civil Engineering &amp; DOB Inspection Projects | BR Civil LLC">
+    <meta property="og:description" content="Portfolio of certified DOB Special Inspections, REI oversight, and civil engineering projects across NYC.">
+    <meta property="og:image" content="https://www.blackrockcivil.com/images/br-civil-logo-transparent.png">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.blackrockcivil.com/projects.html">
+    <meta name="twitter:title" content="NYC Civil Engineering &amp; DOB Inspection Projects | BR Civil LLC">
+    <meta name="twitter:description" content="Portfolio of certified DOB Special Inspections, REI oversight, and civil engineering projects across NYC.">
+    <meta name="twitter:image" content="https://www.blackrockcivil.com/images/br-civil-logo-transparent.png">
+  
+    <!-- Structured Data: ItemList Portfolio Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "BR Civil LLC Engineering Projects",
+      "description": "Selected civil engineering, DOB Special Inspections, and REI projects in New York City.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Hudson Yards Office Inspection Scope",
+          "description": "DOB Special Inspection oversight including structural steel welds and concrete testing in Manhattan."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Park Slope Structural Supervision",
+          "description": "Resident engineering inspection (REI) for underpinning and historic masonry preservation in Brooklyn."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "LIC Infrastructure Facility",
+          "description": "Civil infrastructure management and municipal plumbing main hookups in Long Island City, Queens."
+        }
+      ]
+    }
+    </script>
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
+
+  <!-- ================= PAGE LOAD BAR ================= -->
+  <div id="pageLoader"></div>
+  <div id="scrollProgressBar"></div>
+
+
 
   <!-- ================= TOP INFORMATION BAR ================= -->
   <div class="top-bar">
@@ -32,7 +86,6 @@
   <header class="site-header on-dark" id="siteHeader">
     <div class="wrap header-wrap">
       
-      <!-- BRAND LOGO IMAGE & ELEGANT TYPOGRAPHY -->
       <a href="index.html" class="logo" aria-label="BR Civil LLC Home" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
         <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="logo-img" style="height:48px; width:auto;">
         <span class="brand-name-text" style="font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:1.35rem; color:#ffffff; letter-spacing:-0.02em; line-height:1; text-transform:uppercase;">
@@ -40,7 +93,6 @@
         </span>
       </a>
 
-      <!-- MAIN NAVIGATION -->
       <nav class="main-nav" id="mainNav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -51,13 +103,12 @@
         </ul>
       </nav>
 
-      <!-- HEADER CTA -->
       <div class="header-actions">
-        <a href="contact.html" class="btn solid header-btn">
-          Request Quote
-        </a>
+        <a href="contact.html" class="btn solid header-btn">Request Quote</a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Navigation">
-          Menu
+          <div class="hamburger-icon">
+            <span></span><span></span><span></span>
+          </div>
         </button>
       </div>
 
@@ -70,9 +121,9 @@
     <div class="about-hero-overlay"></div>
 
     <div class="wrap about-hero-inner">
-      <div class="eyebrow">Portfolio</div>
-      <h1>Selected Projects <span>&amp; Engineering Handovers</span></h1>
-      <p class="hero-sub">Explore a portfolio of commercial build-outs, civil inspections, and infrastructure engineering supervised across the NYC metropolitan area.</p>
+      <div class="eyebrow">NYC Project Portfolio · 5 Boroughs</div>
+      <h1>Civil Engineering &amp; <span>DOB Inspection Projects</span></h1>
+      <p class="hero-sub">Explore our portfolio of certified DOB Special Inspections, Resident Engineering (REI) supervision, cost estimations, and civil infrastructure delivery across Queens, Manhattan, and Brooklyn.</p>
     </div>
     <div class="about-hero-meta"><span>03</span> Our Portfolio</div>
     <div class="scroll-cue">Scroll</div>
@@ -89,18 +140,27 @@
         <p>Every project combines rigorous planning, certified inspection logs, trade coordination, and zero structural compromises.</p>
       </div>
 
+      <!-- FILTER TABS -->
+      <div class="project-filter-tabs reveal">
+        <button class="filter-tab active" data-filter="all">All Projects</button>
+        <button class="filter-tab" data-filter="inspections">Special Inspections</button>
+        <button class="filter-tab" data-filter="rei">REI</button>
+        <button class="filter-tab" data-filter="estimation">Estimation</button>
+        <button class="filter-tab" data-filter="plumbing">Plumbing &amp; Civil</button>
+      </div>
+
       <div class="projects-grid reveal">
         <!-- ROW 1 -->
-        <a href="#project-hudson" class="project-card wide">
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=85&w=1400&auto=format&fit=crop" alt="Commercial interior">
+        <a href="#project-hudson" class="project-card wide" data-category="inspections">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=85&w=1400&auto=format&fit=crop"alt="Hudson Yards Manhattan DOB Special Inspection and structural steel verification">
           <div class="project-overlay">
             <div class="tag">Special Inspections · Manhattan</div>
             <h3>Hudson Yards Office Inspection Scope</h3>
           </div>
         </a>
 
-        <a href="#project-parkslope" class="project-card narrow">
-          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=85&w=1200&auto=format&fit=crop" alt="Townhouse building">
+        <a href="#project-parkslope" class="project-card narrow" data-category="rei">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=85&w=1200&auto=format&fit=crop"alt="Park Slope Brooklyn Resident Engineering Inspection REI structural supervision">
           <div class="project-overlay">
             <div class="tag">REI Scope · Brooklyn</div>
             <h3>Park Slope Structural Supervision</h3>
@@ -108,16 +168,16 @@
         </a>
 
         <!-- ROW 2 -->
-        <a href="#project-lic" class="project-card narrow">
-          <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=85&w=1200&auto=format&fit=crop" alt="Urban commercial exterior">
+        <a href="#project-lic" class="project-card narrow" data-category="plumbing">
+          <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=85&w=1200&auto=format&fit=crop"alt="Long Island City Queens civil infrastructure and grading management">
           <div class="project-overlay">
             <div class="tag">Civil Engineering · Queens</div>
             <h3>LIC Infrastructure Facility</h3>
           </div>
         </a>
 
-        <a href="#project-riverside" class="project-card wide">
-          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=85&w=1400&auto=format&fit=crop" alt="Renovated interior">
+        <a href="#project-riverside" class="project-card wide" data-category="estimation">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=85&w=1400&auto=format&fit=crop"alt="Riverside Manhattan pre-construction cost estimation and budget audit">
           <div class="project-overlay">
             <div class="tag">Cost Estimation · Manhattan</div>
             <h3>Riverside Pre-Construction Audit</h3>
@@ -125,16 +185,16 @@
         </a>
 
         <!-- ROW 3 -->
-        <a href="#project-soho" class="project-card wide">
-          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=85&w=1400&auto=format&fit=crop" alt="SoHo Retail Flagship">
+        <a href="#project-soho" class="project-card wide" data-category="plumbing">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=85&w=1400&auto=format&fit=crop"alt="SoHo NYC civil plumbing engineering design and municipal systems layout">
           <div class="project-overlay">
             <div class="tag">Plumbing &amp; Civil · SoHo</div>
             <h3>SoHo Commercial Systems Layout</h3>
           </div>
         </a>
 
-        <a href="#project-tribeca" class="project-card narrow">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=85&w=1200&auto=format&fit=crop" alt="Tribeca Luxury Loft">
+        <a href="#project-tribeca" class="project-card narrow" data-category="inspections">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=85&w=1200&auto=format&fit=crop"alt="TriBeCa DOB compliance audit and structural load verification">
           <div class="project-overlay">
             <div class="tag">Special Inspections · TriBeCa</div>
             <h3>TriBeCa DOB Compliance Audit</h3>
@@ -161,7 +221,7 @@
           <h3>Hudson Yards Office Inspection Scope</h3>
           <p>Full DOB Special Inspection oversight including structural steel welds, concrete strength testing, and firestop verification in an active high-rise.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=85&w=1000&auto=format&fit=crop" alt="Hudson Yards inspection" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=85&w=1000&auto=format&fit=crop"alt="High-rise structural steel and concrete strength inspection Manhattan" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -171,7 +231,7 @@
           <h3>Park Slope Structural Supervision</h3>
           <p>Resident engineering inspection (REI) for underpinning, steel beam placement, and historic masonry preservation.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=85&w=1000&auto=format&fit=crop" alt="Park slope structural work" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=85&w=1000&auto=format&fit=crop"alt="Historic brownstone masonry and underpinning REI inspection Brooklyn" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -181,7 +241,7 @@
           <h3>LIC Infrastructure Facility</h3>
           <p>Civil infrastructure management, site grading, and municipal plumbing main connections for a 35,000 sq ft industrial conversion.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=85&w=1000&auto=format&fit=crop" alt="LIC facility" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=85&w=1000&auto=format&fit=crop"alt="Industrial civil utility conversion and water main hookup Queens" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -191,7 +251,7 @@
           <h3>SoHo Commercial Systems Layout</h3>
           <p>Plumbing engineering design and installation verification for multi-story retail development with cast-iron drain line retrofits.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=85&w=1000&auto=format&fit=crop" alt="SoHo flagship systems" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=85&w=1000&auto=format&fit=crop"alt="Cast-iron commercial plumbing retrofits and drain inspection NYC" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -201,7 +261,7 @@
           <h3>TriBeCa DOB Compliance Audit</h3>
           <p>Comprehensive cost estimation, structural load auditing, and final DOB Special Inspection closeout for penthouse construction.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=85&w=1000&auto=format&fit=crop" alt="TriBeCa loft inspection" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=85&w=1000&auto=format&fit=crop" alt="Penthouse structural load auditing and DOB closeout New York" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -226,7 +286,7 @@
         <div class="footer-col">
           <div class="footer-logo-wrap">
             <a href="index.html">
-              <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="footer-logo-img">
+              <img src="images/br-civil-logo-transparent.png"alt="BR Civil LLC - NYC Civil Engineering & DOB Special Inspections" class="footer-logo-img">
             </a>
           </div>
           <p style="opacity:0.65; font-size:0.9rem; max-width:280px; color:inherit;">

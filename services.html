@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | BR Civil LLC</title>
-  <meta name="description" content="Explore civil capabilities from BR Civil LLC, including Special Inspections, REI, Cost Estimation, Plumbing Engineering, and Construction Management in Queens and NYC.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* VERTICAL SCROLL TRACK FOR SERVICES SECTION */
-    .services-scroll-container {
-      max-height: 480px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding-right: 16px;
-      scroll-behavior: smooth;
-      border-top: 1px solid var(--grey-light, #18382B);
-      border-bottom: 1px solid var(--grey-light, #18382B);
-    }
-
-    .services-scroll-container::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    .services-scroll-container::-webkit-scrollbar-track {
-      background: rgba(10, 27, 20, 0.05);
-      border-radius: 4px;
-    }
-
-    .services-scroll-container::-webkit-scrollbar-thumb {
-      background: var(--gold, #D4AF37);
-      border-radius: 4px;
-    }
-
-    .services-scroll-container .service-row:first-child {
-      border-top: none;
-    }
-
-    .services-scroll-container .service-row:last-child {
-      border-bottom: none;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>NYC Special Inspections &amp; REI Engineering Services | BR Civil LLC</title>
+    <meta name="description" content="BR Civil LLC offers certified NYC DOB Special Inspections, Resident Engineering (REI), Cost Estimation, and Plumbing Engineering across Queens, Brooklyn, and NYC.">
+    <link rel="canonical" href="https://www.blackrockcivil.com/services.html">
+  
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blackrockcivil.com/services.html">
+    <meta property="og:title" content="NYC Special Inspections &amp; REI Engineering Services | BR Civil LLC">
+    <meta property="og:description" content="Certified civil engineering services including DOB Special Inspections, REI, and Cost Estimation in Queens, NY.">
+    <meta property="og:image" content="https://www.blackrockcivil.com/images/br-civil-logo-transparent.png">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.blackrockcivil.com/services.html">
+    <meta name="twitter:title" content="NYC Special Inspections &amp; REI Engineering Services | BR Civil LLC">
+    <meta name="twitter:description" content="Certified civil engineering services including DOB Special Inspections, REI, and Cost Estimation in Queens, NY.">
+    <meta name="twitter:image" content="https://www.blackrockcivil.com/images/br-civil-logo-transparent.png">
+  
+    <!-- Structured Data: Service & FAQPage Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "DOB Special Inspections & Civil Engineering",
+        "provider": {
+          "@type": "ProfessionalService",
+          "name": "BR Civil LLC",
+          "url": "https://www.blackrockcivil.com"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": "New York"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a Special Inspection and when is it required in NYC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Special Inspection is a third-party verification process required by the NYC DOB to ensure that structural and safety-critical work is performed in accordance with approved plans. BR Civil LLC is certified to perform all DOB-required Special Inspections across NYC."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does REI (Resident Engineering Inspection) involve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "REI involves placing a qualified engineer on-site to oversee construction activities, verify material compliance, and ensure project alignment with regulatory requirements. We provide dedicated REI services across Queens and NYC."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
+
+  <!-- ================= PAGE LOAD BAR ================= -->
+  <div id="pageLoader"></div>
+  <div id="scrollProgressBar"></div>
 
   <!-- ================= TOP INFORMATION BAR ================= -->
   <div class="top-bar">
@@ -66,15 +96,13 @@
   <header class="site-header on-dark" id="siteHeader">
     <div class="wrap header-wrap">
       
-      <!-- BRAND LOGO IMAGE & ELEGANT TYPOGRAPHY -->
       <a href="index.html" class="logo" aria-label="BR Civil LLC Home" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
-        <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="logo-img" style="height:48px; width:auto;">
+        <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC - NYC Civil Engineering & DOB Special Inspections" class="logo-img" style="height:48px; width:auto;">
         <span class="brand-name-text" style="font-family:'Libre Franklin', sans-serif; font-weight:800; font-size:1.35rem; color:#ffffff; letter-spacing:-0.02em; line-height:1; text-transform:uppercase;">
           BR <span style="color:#D4AF37; font-weight:600; font-size:1.2rem; letter-spacing:0.04em;">Civil LLC</span>
         </span>
       </a>
 
-      <!-- MAIN NAVIGATION -->
       <nav class="main-nav" id="mainNav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -85,13 +113,12 @@
         </ul>
       </nav>
 
-      <!-- HEADER CTA -->
       <div class="header-actions">
-        <a href="contact.html" class="btn solid header-btn">
-          Request Quote
-        </a>
+        <a href="contact.html" class="btn solid header-btn">Request Quote</a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Navigation">
-          Menu
+          <div class="hamburger-icon">
+            <span></span><span></span><span></span>
+          </div>
         </button>
       </div>
 
@@ -104,9 +131,9 @@
     <div class="about-hero-overlay"></div>
 
     <div class="wrap about-hero-inner">
-      <div class="eyebrow">Capabilities</div>
-      <h1>Comprehensive Civil &amp; <span>Special Inspection Services</span></h1>
-      <p class="hero-sub">From preliminary cost take-offs and Special Inspections to Resident Engineering and full site delivery across Queens and New York City.</p>
+      <div class="eyebrow">NYC DOB Certified Capabilities</div>
+      <h1>NYC Special Inspections &amp; <span>REI Engineering Services</span></h1>
+      <p class="hero-sub">Providing certified DOB Special Inspections, accurate cost take-offs, Plumbing Engineering, and dedicated Resident Engineering (REI) across Queens and New York City.</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn solid">Discuss Your Scope</a>
         <a href="projects.html" class="btn on-dark">View Portfolio</a>
@@ -180,7 +207,7 @@
           <h3>Understand</h3>
           <p>We review project drawings, site conditions, DOB filings, and schedule requirements with engineering leadership.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=85&w=1000&auto=format&fit=crop" alt="Project discovery" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=85&w=1000&auto=format&fit=crop" alt="Civil engineering scope and NYC DOB filing review" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -190,7 +217,7 @@
           <h3>Plan</h3>
           <p>We establish inspection milestones, trade cost take-offs, safety procedures, and procurement schedules.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?q=85&w=1000&auto=format&fit=crop" alt="Blueprint planning" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?q=85&w=1000&auto=format&fit=crop" alt="Pre-construction cost estimation and architectural blueprints" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -200,7 +227,7 @@
           <h3>Inspect &amp; Oversee</h3>
           <p>Our resident engineers perform daily quality assurance, structural field audits, and compliance logging.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=85&w=1000&auto=format&fit=crop" alt="Onsite engineering oversight" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=85&w=1000&auto=format&fit=crop"alt="Resident Engineering Inspection (REI) quality assurance in Queens" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -210,7 +237,7 @@
           <h3>Execute</h3>
           <p>Active site operations are managed under certified protocols to keep work safe and moving forward efficiently.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=85&w=1000&auto=format&fit=crop" alt="Active construction site" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=85&w=1000&auto=format&fit=crop" alt="Active NYC structural inspection and civil site management" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
@@ -220,10 +247,97 @@
           <h3>Deliver</h3>
           <p>We complete final inspection reports, punch lists, and deliver organized closeout documentation for municipal approval.</p>
           <div class="process-image">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=85&w=1000&auto=format&fit=crop" alt="Completed project" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=85&w=1000&auto=format&fit=crop" alt="Final NYC DOB inspection sign-off and closeout documentation" loading="lazy">
           </div>
           <span class="process-arrow">↗</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="faq-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Common Questions</div>
+          <h2>Frequently Asked Questions.</h2>
+        </div>
+        <p>Everything you need to know about our civil engineering services, processes, and NYC DOB compliance requirements.</p>
+      </div>
+
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            What is a Special Inspection and when is it required in NYC?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>A Special Inspection is a third-party verification process required by the NYC Department of Buildings (DOB) to ensure that specific structural and safety-critical construction work is performed in accordance with approved plans and building codes. It is typically required for structural steel connections, high-strength concrete, masonry, excavation, fire-stopping, and more. BR Civil LLC is certified to perform all DOB-required Special Inspections across NYC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            What does REI (Resident Engineering Inspection) involve?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Resident Engineering Inspection (REI) involves placing a qualified engineer on-site full-time or part-time to oversee construction activities. This includes reviewing contractor work quality, verifying material compliance, logging daily site conditions, coordinating with architects and owners, and ensuring the project progresses in alignment with contract documents and regulatory requirements. BR Civil LLC provides dedicated REI services for commercial, infrastructure, and civil projects across Queens and NYC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            How accurate are your cost estimation services?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Our cost estimation process uses detailed quantity take-offs from architectural and engineering drawings, current NYC market pricing data, and verified subcontractor rate benchmarks. We typically deliver estimates within ±5–10% accuracy depending on design completeness. We also provide value engineering recommendations that can significantly reduce project costs without compromising structural integrity or compliance.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Do you work on both commercial and residential projects?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Yes. BR Civil LLC serves a wide range of project types including commercial build-outs, mixed-use developments, multi-family residential buildings, infrastructure upgrades, and civil utility projects. Whether your scope is a single townhouse underpinning or a multi-story commercial special inspection, our team can support your project at any scale.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            What geographic areas does BR Civil LLC serve?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>We are primarily based in Queens, NYC, and regularly serve all five NYC boroughs — Queens, Manhattan, Brooklyn, the Bronx, and Staten Island. We also take on projects in surrounding New York metropolitan areas including New Jersey when required. Contact us directly to discuss your specific project location.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            How do I get started with BR Civil LLC?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>The easiest way to get started is to contact Sourabh S Tiwari or Raja Ramnathan directly by phone, WhatsApp, or email. You can also fill out our online consultation form on the Contact page. We'll schedule a discovery call to understand your project scope, timeline, and compliance requirements, and provide a proposal within 48 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Can BR Civil LLC handle both plumbing engineering and construction management on the same project?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>Absolutely. One of BR Civil LLC's key advantages is our ability to provide multiple engineering disciplines under a single point of contact. We can deliver integrated plumbing engineering, special inspections, cost estimation, and full construction management simultaneously — reducing coordination overhead and improving project delivery efficiency.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

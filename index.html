@@ -2,18 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BR Civil LLC | Civil Engineering, Estimation, REI &amp; Special Inspections NYC</title>
-  <meta name="description" content="BR Civil LLC delivers licensed civil engineering, Special Inspections, REI, Estimation, Plumbing, and Construction management in Queens and New York City.">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>BR Civil LLC | NYC DOB Special Inspections, REI & Civil Engineering</title>
+    <meta name="description" content="BR Civil LLC provides certified NYC DOB Special Inspections, Resident Engineering (REI), Cost Estimation, and Civil Engineering across Queens, Brooklyn, & Manhattan.">
+    <link rel="canonical" href="https://www.blackrockcivil.com/">
+  
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blackrockcivil.com/">
+    <meta property="og:title" content="BR Civil LLC | NYC DOB Special Inspections & Civil Engineering">
+    <meta property="og:description" content="Certified Special Inspections, REI, Cost Estimation, and Civil Engineering in Queens and NYC.">
+    <meta property="og:image" content="https://www.blackrockcivil.com/images/br-civil-logo-transparent.png">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.blackrockcivil.com/">
+    <meta name="twitter:title" content="BR Civil LLC | NYC DOB Special Inspections & Civil Engineering">
+    <meta name="twitter:description" content="Certified Special Inspections, REI, Cost Estimation, and Civil Engineering in Queens and NYC.">
+    <meta name="twitter:image" content="https://www.blackrockcivil.com/images/br-civil-logo-transparent.png">
+  
+    <!-- Structured Data: Unified ProfessionalService & LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "BR Civil LLC",
+      "url": "https://www.blackrockcivil.com",
+      "logo": "https://www.blackrockcivil.com/images/br-civil-logo-transparent.png",
+      "image": "https://www.blackrockcivil.com/images/br-civil-logo-transparent.png",
+      "description": "Licensed civil engineering, NYC DOB Special Inspections, Resident Engineering Inspection (REI), and Cost Estimation.",
+      "telephone": "+1-201-993-2388",
+      "email": "1blackrockcivil@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Queens",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.7282",
+        "longitude": "-73.7949"
+      },
+      "areaServed": [
+        "Queens",
+        "Brooklyn",
+        "Manhattan",
+        "Bronx",
+        "Staten Island",
+        "New York City"
+      ],
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "3"
+      }
+    }
+    </script>
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
+
+  <!-- ================= PAGE LOAD BAR ================= -->
+  <div id="pageLoader"></div>
+  <div id="scrollProgressBar"></div>
+
+  
 
   <!-- ================= TOP INFORMATION BAR ================= -->
   <div class="top-bar">
@@ -35,7 +98,7 @@
       
       <!-- BRAND LOGO IMAGE & ELEGANT TYPOGRAPHY -->
       <a href="index.html" class="logo" aria-label="BR Civil LLC Home">
-        <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="logo-img">
+        <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC - Licensed NYC Civil Engineering & DOB Special Inspections" class="logo-img">
         <span class="brand-name-text">
           BR <span style="color:var(--gold); font-weight:600; font-size:1.2rem; letter-spacing:0.04em;">Civil LLC</span>
         </span>
@@ -105,7 +168,11 @@
           Request Quote
         </a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Mobile Navigation" aria-expanded="false">
-          Menu
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </button>
       </div>
 
@@ -135,10 +202,10 @@
 
     <div class="wrap hero-inner">
       <div class="hero-content">
-        <div class="eyebrow">Civil Engineering &amp; Inspections · Queens, NYC</div>
-        <h1>Engineered for precision. <span>Delivered for endurance.</span></h1>
-        <p class="hero-sub">BR Civil LLC brings together certified civil engineering, Special Inspections, REI, Estimation, and Plumbing expertise from project pre-construction through completion.</p>
-        <div class="hero-actions">
+        <div class="eyebrow hero-animate">Licensed NYC Engineering &amp; Special Inspections · Queens, NY</div>
+        <h1 class="hero-animate">NYC DOB Special Inspections &amp; <span>Civil Engineering <span class="hero-underline">Excellence.</span></span></h1>
+        <p class="hero-sub hero-animate">BR Civil LLC delivers certified DOB Special Inspections, Resident Engineering (REI), Cost Estimation, and Civil Construction management across Queens and New York City.</p>
+        <div class="hero-actions hero-animate">
           <a href="projects.html" class="btn on-dark">Explore Our Work <span>→</span></a>
           <a href="contact.html" class="hero-text-link">Start a Consultation <span>↗</span></a>
         </div>
@@ -288,9 +355,9 @@
   <!-- ================= FEATURE TILES ================= -->
   <section class="section tight">
     <div class="wrap">
-      <div class="tiles reveal">
+      <div class="tiles reveal-stagger">
         <a class="tile" href="projects.html">
-          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=85&w=1000&auto=format&fit=crop" alt="Modern commercial office building">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=85&w=1000&auto=format&fit=crop" alt="NYC DOB Special Inspections and structural engineering projects in New York" loading="lazy">
           <div class="tile-overlay">
             <div class="tag">Our Work</div>
             <h3>Selected Work</h3>
@@ -299,7 +366,7 @@
         </a>
 
         <a class="tile" href="about.html">
-          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=85&w=1000&auto=format&fit=crop" alt="Engineers on site">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=85&w=1000&auto=format&fit=crop" alt="Sourabh S Tiwari and Raja Ramnathan - BR Civil LLC leadership team" loading="lazy">
           <div class="tile-overlay">
             <div class="tag">Our Team</div>
             <h3>Leadership</h3>
@@ -308,13 +375,14 @@
         </a>
 
         <a class="tile" href="contact.html">
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=85&w=1000&auto=format&fit=crop" alt="Architectural discussion">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=85&w=1000&auto=format&fit=crop" alt="Civil engineering cost estimation and REI consultation in Queens NYC" loading="lazy">
           <div class="tile-overlay">
             <div class="tag">Get Started</div>
             <h3>Consultation</h3>
             <p>Discuss your estimation, inspection, or construction scope.</p>
           </div>
         </a>
+
       </div>
     </div>
   </section>
@@ -335,7 +403,7 @@
         
         <div class="why-block">
           <div class="why-block-img-wrap">
-            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=85&w=800&auto=format&fit=crop" alt="Precision Engineering" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=85&w=800&auto=format&fit=crop" alt="Precision civil engineering and structural inspection logs NYC" loading="lazy">
             <span class="why-num">01</span>
           </div>
           <div class="why-block-body">
@@ -346,7 +414,7 @@
 
         <div class="why-block">
           <div class="why-block-img-wrap">
-            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=85&w=800&auto=format&fit=crop" alt="Transparency" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=85&w=800&auto=format&fit=crop" alt="Transparent pre-construction cost estimation and quantity take-offs" loading="lazy">
             <span class="why-num">02</span>
           </div>
           <div class="why-block-body">
@@ -357,7 +425,7 @@
 
         <div class="why-block">
           <div class="why-block-img-wrap">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=85&w=800&auto=format&fit=crop" alt="Safety First" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=85&w=800&auto=format&fit=crop" alt="Certified NYC DOB safety and structural compliance verification" loading="lazy">
             <span class="why-num">03</span>
           </div>
           <div class="why-block-body">
@@ -368,7 +436,7 @@
 
         <div class="why-block">
           <div class="why-block-img-wrap">
-            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=85&w=800&auto=format&fit=crop" alt="Built to Last" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=85&w=800&auto=format&fit=crop" alt="Durable civil infrastructure and Resident Engineering oversight in Queens" loading="lazy">
             <span class="why-num">04</span>
           </div>
           <div class="why-block-body">
@@ -378,6 +446,15 @@
         </div>
 
       </div>
+
+      <!-- DOT INDICATORS -->
+      <div class="why-carousel-controls" id="whyCarouselDots">
+        <button class="why-dot" aria-label="Go to slide 1"></button>
+        <button class="why-dot" aria-label="Go to slide 2"></button>
+        <button class="why-dot" aria-label="Go to slide 3"></button>
+        <button class="why-dot" aria-label="Go to slide 4"></button>
+      </div>
+
     </div>
   </section>
 
@@ -447,6 +524,65 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS SECTION ================= -->
+  <section class="testimonials-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow">Client Testimonials</div>
+          <h2>Trusted by NYC Developers &amp; Builders.</h2>
+        </div>
+        <p>Hear from project owners and developers who have experienced the BR Civil LLC difference firsthand.</p>
+      </div>
+
+      <div class="testimonials-carousel reveal-stagger">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">"BR Civil LLC handled our Special Inspections on a complex Queens mixed-use project. Their knowledge of NYC DOB requirements was exceptional — zero violations, on-time delivery."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Marcus R.</div>
+              <div class="testimonial-role">Real Estate Developer · Queens, NYC</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">"Sourabh's cost estimation service saved us over $80K on pre-construction budgeting. The take-off reports were detailed and the value engineering recommendations were spot-on."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JP</div>
+            <div>
+              <div class="testimonial-name">Jennifer P.</div>
+              <div class="testimonial-role">General Contractor · Manhattan</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">"Raja and his team provided REI services throughout our Brooklyn brownstone renovation. Their on-site presence, daily logs, and compliance tracking kept our project on schedule and code-compliant."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">DK</div>
+            <div>
+              <div class="testimonial-name">David K.</div>
+              <div class="testimonial-role">Property Owner · Brooklyn, NYC</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
