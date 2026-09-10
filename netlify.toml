@@ -1,6 +1,27 @@
+# Force redirect non-www and HTTP to secure canonical www
+[[redirects]]
+  from = "http://blackrockcivil.net/*"
+  to = "https://www.blackrockcivil.net/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://blackrockcivil.net/*"
+  to = "https://www.blackrockcivil.net/:splat"
+  status = 301
+  force = true
+
+# Security Headers to pass Core Web Vitals audits
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+
+# Fallback 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

@@ -38,38 +38,64 @@
     <meta name="twitter:image" content="https://www.blackrockcivil.net/images/br-civil-logo-transparent.png">
   
     <!-- Structured Data: Service & FAQPage Schema -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "Service",
+          "@id": "https://www.blackrockcivil.net/services.html#service",
           "name": "NYC DOB Special Inspections & Civil Engineering",
-          "serviceType": "DOB Special Inspections, Resident Engineering (REI), Cost Estimation",
+          "serviceType": "DOB Special Inspections, TR-1 Sign-offs, Resident Engineering (REI), Cost Estimation",
           "provider": {
             "@type": "ProfessionalService",
+            "@id": "https://www.blackrockcivil.net/#organization",
             "name": "BR Civil LLC",
-            "url": "https://www.blackrockcivil.net",
+            "alternateName": [
+              "Black Rock Civil",
+              "BlackRock Civil NYC",
+              "BR Civil Engineering",
+              "Black Rock Civil LLC"
+            ],
+            "url": "https://www.blackrockcivil.net/",
             "telephone": "+1-201-993-2388",
             "address": {
               "@type": "PostalAddress",
-              "addressLocality": "Queens",
+              "streetAddress": "91-12 175th St",
+              "addressLocality": "Jamaica",
               "addressRegion": "NY",
+              "postalCode": "11432",
               "addressCountry": "US"
             }
           },
           "areaServed": [
-            "Queens",
-            "Brooklyn",
-            "Manhattan",
-            "Bronx",
-            "Staten Island",
-            "New York City"
+            { "@type": "AdministrativeArea", "name": "Queens" },
+            { "@type": "AdministrativeArea", "name": "Brooklyn" },
+            { "@type": "AdministrativeArea", "name": "Manhattan" },
+            { "@type": "AdministrativeArea", "name": "Bronx" },
+            { "@type": "AdministrativeArea", "name": "Staten Island" }
           ]
         },
         {
           "@type": "FAQPage",
+          "@id": "https://www.blackrockcivil.net/services.html#faq",
           "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is a TR-1 form in NYC DOB Special Inspections?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A TR-1 (Technical Report) is an official NYC Department of Buildings document where a licensed Professional Engineer (PE) certifies that required special inspections—such as concrete, structural steel, or firestopping—have been performed and meet NYC Building Code requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is BR Civil LLC also referenced as Black Rock Civil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BR Civil LLC operates online via blackrockcivil.net. Black Rock Civil and BR Civil LLC refer to the same licensed NYC civil engineering and special inspection entity based in Jamaica, Queens."
+              }
+            },
             {
               "@type": "Question",
               "name": "What is a Special Inspection and when is it required in NYC?",
@@ -84,22 +110,6 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "REI involves placing a qualified engineer on-site to oversee construction activities, verify material compliance, maintain daily inspection logs, and ensure project alignment with regulatory requirements."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How accurate are your cost estimation services?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Our cost estimation uses detailed quantity take-offs from architectural and engineering drawings with NYC market pricing data, delivering estimates within ±5–10% accuracy along with value engineering recommendations."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What geographic areas does BR Civil LLC serve?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "BR Civil LLC is based in Queens, NYC, and serves all five NYC boroughs: Queens, Manhattan, Brooklyn, the Bronx, and Staten Island."
               }
             }
           ]
@@ -232,7 +242,63 @@
 
     </div>
   </section>
+<!-- ================= NYC DOB INSPECTION SCOPE TABLE ================= -->
+<section class="section" style="padding-top: 0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">NYC Code Compliance</div>
+        <h2>DOB Special Inspection Scope &amp; Codes</h2>
+      </div>
+      <p>Our licensed Professional Engineers (PE) inspect and sign off on all Class 2 Special Inspections in strict accordance with the NYC Construction Codes.</p>
+    </div>
 
+    <div class="table-container reveal" style="overflow-x:auto; margin-top:24px;">
+      <table class="services-table" style="width:100%; border-collapse:collapse; text-align:left; font-size:0.95rem;">
+        <thead>
+          <tr style="border-bottom:2px solid rgba(212,175,55,0.4); color:#D4AF37;">
+            <th scope="col" style="padding:14px 16px;">DOB Category</th>
+            <th scope="col" style="padding:14px 16px;">Inspection Scope</th>
+            <th scope="col" style="padding:14px 16px;">NYC Code Compliance</th>
+            <th scope="col" style="padding:14px 16px;">Deliverable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:14px 16px; font-weight:600;">Special Inspection</td>
+            <td style="padding:14px 16px;">Structural Steel &amp; Welding</td>
+            <td style="padding:14px 16px; opacity:0.8;">BC 1704.3</td>
+            <td style="padding:14px 16px; opacity:0.8;">TR-1 Sign-Off</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:14px 16px; font-weight:600;">Special Inspection</td>
+            <td style="padding:14px 16px;">Concrete &amp; Cast-in-Place</td>
+            <td style="padding:14px 16px; opacity:0.8;">BC 1704.4</td>
+            <td style="padding:14px 16px; opacity:0.8;">TR-1 Sign-Off</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:14px 16px; font-weight:600;">Special Inspection</td>
+            <td style="padding:14px 16px;">Masonry Construction</td>
+            <td style="padding:14px 16px; opacity:0.8;">BC 1704.5</td>
+            <td style="padding:14px 16px; opacity:0.8;">TR-1 Sign-Off</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.08);">
+            <td style="padding:14px 16px; font-weight:600;">Special Inspection</td>
+            <td style="padding:14px 16px;">Firestopping &amp; Penetration Seals</td>
+            <td style="padding:14px 16px; opacity:0.8;">BC 1704.27</td>
+            <td style="padding:14px 16px; opacity:0.8;">TR-1 Sign-Off</td>
+          </tr>
+          <tr>
+            <td style="padding:14px 16px; font-weight:600;">Engineering</td>
+            <td style="padding:14px 16px;">Resident Engineering Inspection (REI)</td>
+            <td style="padding:14px 16px; opacity:0.8;">DOT / NYC Infrastructure</td>
+            <td style="padding:14px 16px; opacity:0.8;">Daily QA Logs &amp; Closeout</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
   <!-- ================= PROCESS ================= -->
   <section class="section section-dark">
     <div class="wrap">
@@ -380,7 +446,25 @@
             <p>Absolutely. One of BR Civil LLC's key advantages is our ability to provide multiple engineering disciplines under a single point of contact. We can deliver integrated plumbing engineering, special inspections, cost estimation, and full construction management simultaneously — reducing coordination overhead and improving project delivery efficiency.</p>
           </div>
         </div>
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            What is a TR-1 form in NYC DOB Special Inspections?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>A TR-1 (Technical Report) is an official NYC Department of Buildings document where a licensed Professional Engineer (PE) certifies that required special inspections—such as concrete, structural steel, or firestopping—have been completed in compliance with NYC Building Codes. BR Civil LLC prepares and submits all initial, progress, and final TR-1 sign-offs via DOB NOW.</p>
+          </div>
+        </div>
 
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            Why is BR Civil LLC also referenced as Black Rock Civil?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <p>BR Civil LLC operates online via blackrockcivil.net. Whether referenced as Black Rock Civil or BR Civil LLC, all licensed civil engineering, REI, and NYC DOB special inspection operations are managed directly by our Jamaica, Queens engineering office.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -400,8 +484,8 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-col">
-          <div class="footer-logo-wrap">
-            <a href="index.html">
+          <div class="footer-logo-wrap" style="margin-bottom:18px;">
+            <a href="index.html" style="text-decoration:none;">
               <img src="images/br-civil-logo-transparent.png" alt="BR Civil LLC Logo" class="footer-logo-img">
             </a>
           </div>
@@ -437,9 +521,13 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 BR Civil LLC. All rights reserved.</span>
-        <span>Queens, NYC · Certified Civil Services</span>
+      <div class="footer-bottom" style="display:flex; flex-direction:column; gap:8px; align-items:center; text-align:center; padding-top:16px; border-top:1px solid rgba(255,255,255,0.1);">
+        <p style="margin:0; font-size:0.88rem; opacity:0.85;">
+          <strong>BR Civil LLC</strong> | Black Rock Civil Engineering &amp; NYC DOB Special Inspections. Serving Queens, Brooklyn, Manhattan, Bronx, and Staten Island.
+        </p>
+        <p style="margin:0; font-size:0.82rem; opacity:0.65;">
+          &copy; 2026 BR Civil LLC. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
